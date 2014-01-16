@@ -8,14 +8,30 @@ public class LonelyTweetModel {
 	public String getText() {
 		return text;
 	}
+	
+	public LonelyTweetModel(String text){
+		super();
+		this.text=text;
+		timestamp=new Date();
+	}
+	
+	public LonelyTweetModel(String text, Date timestamp){
+		super();
+		this.text=text;
+		this.timestamp=timestamp;
+	}
+	
 	public void setText(String text) {
 		this.text = text;
 	}
+	
 	public Date getTimestamp() {
 		return timestamp;
 	}
+	
 	public void setTimestamp(Date timestamp) {
 		this.timestamp = timestamp;
 	}
+
 	
 }
