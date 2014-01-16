@@ -7,11 +7,10 @@ import java.util.Date;
 public abstract class LonelyTweetModel {
 
 	private String text;
-	private Date timestamp;
+	protected Date timestamp;
 	public String getText() {
 		return text;
 	}
-	//this is jeff
 
 	public LonelyTweetModel(String text){
 		super();
@@ -32,7 +31,10 @@ public abstract class LonelyTweetModel {
 
 	public abstract Date getTimestamp(); 
 
-	public void setText(String text) {
+	public void setText(String text)throws Exception {
+		if(text.length()>140){
+			throw new IllegalArgumentException();
+		}
 		this.text = text;
 	}
 	
@@ -42,7 +44,7 @@ public abstract class LonelyTweetModel {
 		this.timestamp = timestamp;
 	}
 
-	
+	public abstract boolean isImportant();
 	
 
 }

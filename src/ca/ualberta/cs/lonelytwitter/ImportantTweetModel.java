@@ -7,7 +7,7 @@ public class ImportantTweetModel extends LonelyTweetModel {
     @Override
     public Date getTimestamp() {
             // TODO Auto-generated method stub
-            return null;
+            return super.timestamp;
     }
 
     public ImportantTweetModel(String text, Date timestamp) {
@@ -22,4 +22,10 @@ public class ImportantTweetModel extends LonelyTweetModel {
     public String getText(){
             return "Important! " + super.getText();
     }
+
+	@Override
+	public boolean isImportant() {
+		// TODO Auto-generated method stub
+		return true;
+	}
 }
