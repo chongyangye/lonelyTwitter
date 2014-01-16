@@ -11,7 +11,7 @@ public abstract class LonelyTweetModel {
 	public String getText() {
 		return text;
 	}
-	
+	//this is jeff
 
 	public LonelyTweetModel(String text){
 		super();
