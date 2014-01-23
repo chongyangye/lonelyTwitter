@@ -2,21 +2,22 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.ArrayList;
 
-public class TweetListModel {
-	private ArrayList<AbsractTweetModel> tweetList;
 
-	public ArrayList<AbsractTweetModel> getTweetList() {
-		return tweetList;
+public class TweetListModel
+{
+	private ArrayList<LonelyTweetModel> list;
+
+	
+	public ArrayList<LonelyTweetModel> getList()
+	{
+	
+		return list;
 	}
 
-	public void setTweetList(ArrayList<AbsractTweetModel> tweetList) {
-		this.tweetList = tweetList;
+	
+	public void setList(ArrayList<LonelyTweetModel> list)
+	{
+	
+		this.list = list;
 	}
-
-	public TweetListModel() {
-		super();
-		// TODO Auto-generated constructor stub
-		tweetList = new ArrayList<AbsractTweetModel>();
-	}
-
 }
